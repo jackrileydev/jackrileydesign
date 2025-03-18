@@ -1,0 +1,984 @@
+:root {
+
+
+
+    --sI_t01_family: 'anthony';
+    --sI_t02_family: 'pareto';
+    --sI_t03_family: 'technomessage';
+    --sI_t04_family: 'pivot';
+    --sI_t05_family: 'feature';
+
+
+    --base-font-size: 1.4vw; /* Adjust the base font size based on viewport width */
+    --min-font-size: 1.05vw; /* Set a minimum font size */
+    --max-font-size: 2.1vw; /* Set a maximum font size */
+
+    /* dividers */
+
+    --additionalSectionSapce: 5.45rem;
+    --caseContentGap: 1.05rem;
+    --caseContentHalfGap: 0.525rem;
+    --labelBottomMargin: 0.9rem;
+    --labelIntroBottomMargin: 0.49rem;
+    --footerTopMargin: 0.1rem;
+
+
+    --underline-weight: 1.05px;
+
+
+    /* above needs updating */
+
+
+     /* COLORS */
+
+    /* light mode */
+
+    --lm_white: #d8d8d8;
+    --lm_black: #111111;
+    --lm_grey: #7c7b7c;
+    --lm_darkGrey: #646464;
+    --lm_lightGrey: #b2b2b2;
+
+
+    /* dark mode */
+
+    --dm_white: #fbfbfb;
+    --dm_black: #111111;
+    --dm_grey: #6b6b6b;
+    --dm_lightGrey: #b2b2b2;
+    --dm_darkGrey: #282828;
+
+
+    /* grey mode */
+
+    --gm_white: #fbfbfb;
+    --gm_black: #111111;
+    --gm_grey: #b5b5b5;
+    --gm_lightGrey: #cecece;
+    --gm_darkGrey: #606060;
+
+
+
+    /* NAME EFFECT */
+
+    --sI_t01_family: 'anthony';
+    --sI_t02_family: 'pareto';
+    --sI_t03_family: 'technomessage';
+    --sI_t04_family: 'pivot';
+    --sI_t05_family: 'feature';
+
+
+
+    /* utility */
+
+    --underline-weight: 1.05px;
+
+    
+    /* TYPE STYLING */
+
+    --scaleFactor: 1;
+
+    /* body */
+
+    --fw-body: 400;
+    --fs-body-base: 0.8rem;
+    --fs-body: calc(var(--fs-body-base) * var(--scaleFactor));
+    --lh-body-base: 1.05rem;
+    --lh-body: calc(var(--lh-body-base) * var(--scaleFactor));
+    --lh-bodyHalf: 0.525rem;
+
+    /* nav label */
+
+    --fw-navLabel: 600;
+    --fs-navLabel-base: 0.4944rem;
+    --fs-navLabel: calc(var(--fs-navLabel-base) * var(--scaleFactor));
+
+
+    /* project type label */
+
+    --fsProjTypeLabel-base: 0.56rem;
+    --fs-projTypeLabel: calc(var(--fsProjTypeLabel-base) * var(--scaleFactor));
+    --lh-projTypeLabel: 0.4rem;
+
+
+    /* h1 */
+
+    --fw-h1: 500;
+    --fs-h1-base: 1.768rem;
+    --fs-h1: calc(var(--fs-h1-base) * var(--scaleFactor));
+    --lh-h1-base: 2.02rem;
+    --lh-h1: calc(var(--lh-h1-base) * var(--scaleFactor));
+
+
+    /* h2 */
+
+    --fs-h2: ;
+    --fs-h3: ;
+
+
+    /* footer */
+
+    --fs-footer-base: 0.448rem;
+    --fs-footer: calc(var(--fs-footer-base) * var(--scaleFactor));
+
+}
+
+/* fonts */
+
+/* diatype */
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* feature */
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-Light-Trial.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-Bold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* anthony */
+@font-face {
+    font-family: 'anthony';
+    src: url('../assets/Anthony.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* pareto */
+@font-face {
+    font-family: 'pareto';
+    src: url('../assets/pareto/ABCParetoEdu-Triangular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* technomessage */
+@font-face {
+    font-family: 'technomessage';
+    src: url('../assets/technomessage/technomessage.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* pivot */
+@font-face {
+    font-family: 'pivot';
+    src: url('../assets/pivot/Pivot-Deco.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* diatype weights */
+.regular {
+    font-family: 'diatype', sans-serif;
+    font-weight: 400;
+}
+.medium {
+    font-family: 'diatype', sans-serif;
+    font-weight: 500;
+}
+.bold {
+    font-family: 'diatype', sans-serif;
+    font-weight: 700;
+}
+
+/* Site wide and body */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-image: linear-gradient(to bottom, #141414, #181818, #141414);*/
+    background-image: linear-gradient(to bottom, #eeeeee, #b6d3ef, #eeeeee, #e9fbe6, #eeeeee, #fbf3d7);
+    background-size: cover;
+    font-family: 'diatype';
+    font-size: clamp(var(--min-font-size), var(--base-font-size), var(--max-font-size));
+    font-weight: 400;
+    line-height: 1.305;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.0014rem;
+    padding: 1.2rem; 
+    box-sizing: border-box;
+    color: #111111;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.emphasisColor {
+    color: var(--emphasis-color_01);
+    transition: color var(--emphasis-color-transition);
+}
+
+.emphasisColorBG {
+    background-color: var(--emphasis-color_01);
+    transition: background-color var(--emphasis-color-transition);
+}
+
+.emphasisColorUnderline {
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: calc(var(--base-font-size) * 0.175);
+    text-decoration-thickness: calc(var(--base-font-size) * 0.0775);
+    text-decoration-color: var(--emphasis-color_01);
+    transition: text-decoration-color var(--emphasis-color-transition);
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    background-color: var(--emphasis-color_01);
+    transform-origin: 0 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    pointer-events: auto;
+}
+
+a:hover {
+
+}
+
+a:hover #custom-cursor {
+    display: none;
+}
+
+/* cursor */
+#custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--emphasis-color_01);
+    pointer-events: none;
+    transition: transform 0.1s ease, background-color var(--emphasis-color-transition), filter 0.3s ease;
+    z-index: 10000;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+h1 {
+    font-family: 'diatype', sans-serif;
+    font-weight: 700;
+    font-size: calc(var(--base-font-size) * 1.5);
+    color: #4a4849;
+}
+
+#name {
+    font-weight: 700;
+    font-size: calc(var(--base-font-size) * 1);
+    transition: color 0.3s ease-in-out;
+}
+
+#name:hover {
+    color: var(--lm_lightGrey);
+}
+
+
+/* CASE STUDY content styles */
+
+
+/* topbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info {
+    color: #111111;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+#info:hover {
+    color: var(--lm_lightGrey);
+}
+
+/* start of case study */
+
+.caseStudy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#caseStudyContainer {
+    
+}
+
+.caseContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 100%;
+    gap: var(--caseContentGap);
+
+}
+
+.hero video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+/* case study external links */
+
+#here {
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;    
+}
+
+#here:hover {
+    color: var(--lm_lightGrey);
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    color: #9b9b9b;
+    font-size: inherit;
+    width: 100%;
+    position: relative;
+}
+
+.navigationControls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: var(--footerTopMargin);
+}
+
+.arr {
+    font-size: calc(var(--base-font-size) * 0.575);
+    color: #6d6d6d;
+
+}
+
+
+/* description container */
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7625rem;
+    margin-top: -0.4725rem;
+}
+
+/*ruler */
+.horizontalRuler {
+    height: 0.7px; /* Adjust the height of the horizontal ruler */
+    width: 100%; /* Adjust the width to fit your design */
+    /*background-color: #7d7a7b;*/
+    background-color: #adadad;
+    
+    transform-origin: 0 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+
+/* intro containers */
+
+.intro {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.titles_categories {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: calc(var(--base-font-size) * 5.075);
+    line-height: calc(var(--base-font-size) * 4.85);
+    letter-spacing: -0.115rem;
+    font-weight: 500;
+}
+
+.categories {
+    font-weight: 300;
+    font-size: calc(var(--base-font-size) * 0.7);
+    /*color: #7d7a7b;*/
+    color: #868686;
+}
+
+.description {
+    flex: 2.665;
+    font-family: 'feature';
+    font-size: calc(var(--base-font-size) * 1.225);
+    line-height: calc(var(--base-font-size) * 1.63);
+    font-weight: 300;
+    letter-spacing: 0.014rem;
+    margin-bottom: 0rem;
+ 
+}
+
+/* labels */
+
+.label {
+    margin-bottom: var(--labelBottomMargin);
+}
+
+.labelIntro {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(var(--base-font-size) * 1.05);
+    gap: 0.56rem;
+    font-weight: 500;
+    margin-bottom: var(--labelIntroBottomMargin);
+}
+
+.labelDescription {
+    max-width: 44%;
+    margin-top: 0.28em;
+
+    font-family: 'diaType';
+    font-size: calc(var(--base-font-size) * 1.05);
+    line-height: calc(var(--base-font-size) * 1.35);
+
+    font-weight: 300;
+}
+
+/* generator tool */
+
+/* tool layout */
+
+
+.toolLayout {
+    display: flex;
+    align-items: stretch; /* Ensures each column is the same height */
+    max-width: 100%;
+    overflow: hidden;
+    gap: 0.7rem;
+
+    /*margin-bottom: var(--additionalSectionSapce);*/
+    margin-bottom: -0.35rem;
+  }
+  
+  /* Give each side its own flex rule (adjust these to suit your desired ratio) */
+  .toolLayoutLeft {
+    flex: 2.35; 
+    display: flex;     /* Allows the child to fill its parent’s height */
+  }
+  .toolLayoutRight {
+    flex: 1; 
+    display: flex;
+  }
+  
+  /* Ensure the child video fills the column’s full height */
+  .toolLayoutLeft img,
+  .toolLayoutLeft video,
+  .toolLayoutRight img,
+  .toolLayoutRight video {
+    width: 100%;
+    height: 100%;      /* Match the parent’s height */
+    object-fit: cover; /* or contain, to avoid cropping */
+    border-radius: 4.2px;
+  }
+
+  /* tool as texture */
+
+  .toolAsTexture {
+    display: flex;
+    max-width: 100%;
+
+    margin-bottom: var(--additionalSectionSapce);
+  }
+  
+  .toolAsTexture img,
+  .toolAsTexture video {
+  max-width: 100%;
+    }
+  
+
+
+
+
+/* alphabet */
+
+.alphabet {
+
+}
+
+.alphabet video {
+    max-width: 100%;
+}
+
+
+
+/* iconography */
+
+
+/* static */
+
+.icons2DStatic {
+   margin: 0;
+   padding: 0;
+}
+
+.icons2DStatic img {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* spinning */
+
+.spinningIcon video {
+    max-width: 100%;
+    display: block;
+}
+
+/* rotating */
+
+.rotatingIcon video {
+    max-width: 100%;
+    margin-bottom: var(--additionalSectionSapce);
+
+}
+
+
+
+/* color palette */
+
+
+.colorPalette {
+    max-width: 100%;
+    margin-bottom: var(--additionalSectionSapce);
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.colorPalette video {
+    max-width: 100%;
+    border-radius: 4.2px;
+    
+}
+
+/* website */
+
+
+.website {
+    max-width: 100%;
+    margin-bottom: var(--additionalSectionSapce);
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.website video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+
+/* applications */ 
+
+
+/* analog */
+
+.analog {
+    max-width: 100%;
+    /*margin-top: -0.525rem;*/
+    margin-bottom: var(--labelBottomMargin);
+    font-weight: 300;
+}
+
+.analogContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--caseContentGap);
+}
+
+.analogContent img {
+    max-width: 100%;
+}
+
+.analogContent video {
+    max-width: 100%;
+}
+
+.analogLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+}
+
+
+/* tickets 
+
+/* digital */
+
+.digital {
+    max-width: 100%;
+    /*margin-top: -0.525rem;*/
+    margin-bottom: var(--labelBottomMargin);
+    font-weight: 300;
+}
+
+.digitalContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--caseContentGap);
+}
+
+.digitalContent img {
+    max-width: 100%;
+}
+
+.digitalContent video {
+    max-width: 100%;
+}
+
+.digitalLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+}
+
+
+/* tickets */
+
+#tickets {
+    margin-bottom: var(--additionalSectionSapce);
+}
+
+
+
+
+
+/* digital signs */
+
+.digitalSigns {
+    display: flex;
+    max-width: 100%; /* Restrict the container's width */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    gap: 0.7rem;
+}
+
+.digitalSigns img,
+.digitalSigns video {
+    flex: 1; /* Make each element share the available space equally */
+    max-width: 50%; /* Ensure individual elements don't exceed their parent's size */
+}
+
+/* print */
+
+/* business cards */
+
+.bcards {
+    display: flex;
+    max-width: 100%; /* Restrict the container's width */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    gap: 0.7rem;
+    /* margin-bottom: var(--additionalSectionSapce); */
+}
+
+.bcards img,
+.bcards video {
+    flex: 1; /* Make each element share the available space equally */
+    max-width: 100%; /* Ensure individual elements don't exceed their parent's size */
+    border-radius: 4.2px;
+}
+
+/* letterhead */
+
+
+.letterhead {
+    display: flex;
+    max-width: 100%; /* Restrict the container's width */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    gap: 0.7rem;
+    /* margin-bottom: var(--additionalSectionSapce); */
+}
+
+.letterhead img,
+.letterhead video {
+    flex: 1; /* Make each element share the available space equally */
+    max-width: 100%; /* Ensure individual elements don't exceed their parent's size */
+    border-radius: 4.2px;
+}
+
+/* employee badges */
+
+.employeeBadges {
+    display: flex;
+    max-width: 100%;
+}
+
+.employeeBadges img,
+.employeeBadges video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+/* invite cards */
+
+.invite {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: var(--additionalSectionSapce);
+}
+
+.invite img,
+.invite video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+
+/* ooh */
+
+.ooh {
+    max-width: 100%;
+    margin-bottom: var(--labelBottomMargin);
+    font-weight: 300;
+}
+
+.oohContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.oohContent img {
+    max-width: 100%;
+}
+
+.oohContent video {
+    max-width: 100%;
+}
+
+.oohLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+}
+
+
+
+
+.toolLayout {
+    display: flex;
+    align-items: stretch; /* Ensures each column is the same height */
+    max-width: 100%;
+    overflow: hidden;
+    gap: 0.7rem;
+
+    /*margin-bottom: var(--additionalSectionSapce);*/
+    margin-bottom: -0.35rem;
+  }
+  
+  /* Give each side its own flex rule (adjust these to suit your desired ratio) */
+  .toolLayoutLeft {
+    flex: 2.35; 
+    display: flex;     /* Allows the child to fill its parent’s height */
+  }
+  .toolLayoutRight {
+    flex: 1; 
+    display: flex;
+  }
+  
+  /* Ensure the child video fills the column’s full height */
+  .toolLayoutLeft img,
+  .toolLayoutLeft video,
+  .toolLayoutRight img,
+  .toolLayoutRight video {
+    width: 100%;
+    height: 100%;      /* Match the parent’s height */
+    object-fit: cover; /* or contain, to avoid cropping */
+    border-radius: 4.2px;
+  }
+
+  /* construction site — high */
+
+  .constructionSiteHigh {
+    display: flex;
+    max-width: 100%;
+  }
+
+.constructionSiteHigh img,
+.constructionSiteHigh video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+
+  
+
+/* construction site quad layout */
+
+.constructionSiteDouble {
+    display: flex;
+    align-items: stretch; /* Ensures each column is the same height */
+    max-width: 100%;
+    overflow: hidden;
+    gap: 0.7rem;
+}
+
+.csd_left {
+display: flex;
+}
+
+.csd_right {
+display: flex;
+}
+
+.csd_left img,
+.csd_left video,
+.csd_right img,
+.csd_right video {
+  width: 100%;
+  height: 100%;      /* Match the parent’s height */
+  object-fit: cover; /* or contain, to avoid cropping */
+  border-radius: 4.2px;
+}
+
+
+/* 01 */
+
+.constructionSiteHigh_01 {
+    flex: 1;
+}
+
+.constructionSiteHigh_01 img,
+.constructionSiteHigh_01 video {
+    max-width: 100%;
+}
+
+/* 02 */
+
+.constructionSiteHigh_02 {
+    flex: 1;
+}
+
+.constructionSiteHigh_02 img,
+.constructionSiteHigh_02 video {
+    max-width: 100%;
+}
+
+/* 03 */
+
+.constructionSiteHigh_03 {
+    flex: 1;
+}
+
+.constructionSiteHigh_03 img,
+.constructionSiteHigh_03 video {
+    max-width: 100%;
+}
+
+/* 04 */
+
+.constructionSiteHigh_04 {
+    flex: 1;
+}
+
+.constructionSiteHigh_04 img,
+.constructionSiteHigh_04 video {
+    max-width: 100%;
+}
+
+
+/* construction site perimeter */
+
+
+.constructionSitePerimeter {
+    display: flex;
+    max-width: 100%; /* Restrict the container's width */
+}
+
+.constructionSitePerimeter img,
+.constructionSitePerimeter video {
+    max-width: 100%;
+    border-radius: 4.2px;
+}
+
+
+

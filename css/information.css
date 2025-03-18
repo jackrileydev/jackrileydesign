@@ -1,0 +1,474 @@
+:root {
+
+    /* amplify colors */
+
+    --amplify_blue: #0f2f67;
+    --amplify_orange: #7b3c00;
+    --amplify_red: #661010;
+    --amplify_green: #0f6726;
+
+
+    /* COLORS */
+
+    /* light mode */
+
+    --lm_white: #d8d8d8;
+    --lm_black: #111111;
+    --lm_grey: #7c7b7c;
+    --lm_darkGrey: #646464;
+    --lm_lightGrey: #b2b2b2;
+
+
+    /* dark mode */
+
+    --dm_white: #fbfbfb;
+    --dm_black: #111111;
+    --dm_grey: #6b6b6b;
+    --dm_lightGrey: #b2b2b2;
+    --dm_darkGrey: #282828;
+
+
+    /* grey mode */
+
+    --gm_white: #fbfbfb;
+    --gm_black: #111111;
+    --gm_grey: #b5b5b5;
+    --gm_lightGrey: #cecece;
+    --gm_darkGrey: #606060;
+
+
+
+    /* NAME EFFECT */
+
+    --sI_t01_family: 'anthony';
+    --sI_t02_family: 'pareto';
+    --sI_t03_family: 'technomessage';
+    --sI_t04_family: 'pivot';
+    --sI_t05_family: 'feature';
+
+
+
+    /* utility */
+
+    --underline-weight: 1.05px;
+
+    
+    /* TYPE STYLING */
+
+    /* TYPE STYLING OG */
+
+    --base-font-size: 1.4vw;
+    --min-font-size: 1.05vw; 
+    --max-font-size: 2.1vw; 
+
+    --scaleFactor: 1;
+
+    /* body */
+
+    --fw-body: 400;
+    --fs-body-base: 0.98rem;
+    --fs-body: calc(var(--fs-body-base) * var(--scaleFactor));
+    --lh-body-base: 1.42rem;
+    --lh-body: calc(var(--lh-body-base) * var(--scaleFactor));
+    --lh-bodyHalf: 0.525rem;
+
+      /* personal links */
+
+      --fw-personalLinks: 400;
+      --fs-personalLinks-base: 0.98rem;
+      --fs-personalLinks: calc(var(--fs-personalLinks-base) * var(--scaleFactor));
+      --lh-personalLinks-base: 1.42rem;
+      --lh-personalLinks: calc(var(--lh-personalLinks-base) * var(--scaleFactor));
+      --lh-personalLinksHalf: 0.525rem;
+
+
+    /* nav */
+
+    --fw-navLabel: 600;
+    --fs-navLabel-base: 0.98rem;
+    --fs-navLabel: calc(var(--fs-navLabel-base) * var(--scaleFactor));
+
+
+    /* project type label */
+
+    --fsProjTypeLabel-base: 0.56rem;
+    --fs-projTypeLabel: calc(var(--fsProjTypeLabel-base) * var(--scaleFactor));
+    --lh-projTypeLabel: 0.4rem;
+
+
+    /* h1 */
+
+    --fw-h1: 500;
+    --fs-h1-base: 3.05rem;
+    --fs-h1: calc(var(--fs-h1-base) * var(--scaleFactor));
+    --lh-h1-base: 3.6rem;
+    --lh-h1: calc(var(--lh-h1-base) * var(--scaleFactor));
+
+
+    /* h2 */
+
+    --fs-h2: ;
+    --fs-h3: ;
+
+
+    /* footer */
+
+    --fs-footer-base: 0.448rem;
+    --fs-footer: calc(var(--fs-footer-base) * var(--scaleFactor));
+
+
+}
+
+/* LOADING FONTS */
+
+/* diatype */
+
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'diatype';
+    src: url('../assets/diatype/ABCDiatypeEdu-Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* feature */
+
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-Light-Trial.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'feature';
+    src: url('../assets//feature/FeatureDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'feature';
+    src: url('../assets/feature/FeatureDisplay-Bold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* anthony */
+
+@font-face {
+    font-family: 'anthony';
+    src: url('../assets/anthony/anthony.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* pareto */
+
+@font-face {
+    font-family: 'pareto';
+    src: url('../assets/pareto/ABCParetoEdu-Triangular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* technomessage */
+
+@font-face {
+    font-family: 'technomessage';
+    src: url('../assets/technomessage/technomessage.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* pivot */
+
+@font-face {
+    font-family: 'pivot';
+    src: url('../assets/pivot/Pivot-Deco.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* diatype weights */
+
+.regular {
+    font-family: 'diatype', sans-serif;
+    font-weight: 400;
+}
+
+.medium {
+    font-family: 'diatype', sans-serif;
+    font-weight: 500;
+}
+
+.bold {
+    font-family: 'diatype', sans-serif;
+    font-weight: 700;
+}
+
+
+/* HTML / * / BODY */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    color: #282828;
+    /*background-image: radial-gradient(#656565, #808080, #808080);*/
+    /*background-color: #F3F3F3;
+    background-color: #B2B2B2;*/
+    background-image: linear-gradient(to bottom, #BCBCBC, #F3F3F3);
+    font-family: 'diatype';
+    font-size: clamp(var(--min-font-size), var(--base-font-size), var(--max-font-size));
+    font-weight: 400;
+    line-height: 1.305;
+    letter-spacing: -0.0014rem;
+    
+
+    padding: 1.225rem;
+    
+    
+    overflow: hidden;
+    box-sizing: border-box; 
+      
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+
+/* P / A / H TAGS */
+
+
+p {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    pointer-events: auto;
+}
+
+
+
+
+/* NAV */
+
+/* name */
+
+.nav {
+    color: var(--gm_darkGrey);
+    font-weight: 700;
+    font-size: var(--fs-body); 
+    transition: color 0.3s ease-in-out;
+}
+
+
+.nav:hover {
+    color: var(--gm_white);
+}
+
+
+
+
+
+
+/* CUSTOM CLASSES / ID'S */
+
+/* MAIN CONTAINER */
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    width: 100%;
+
+    gap:3.5vh;
+}
+
+/* text content */
+
+
+.opener {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 87.5%;
+
+    justify-content: space-between;
+    overflow-y: none;
+  
+    font-size: calc(var(--max-font-size) * 2.1);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: var(--fw-h1);
+
+    margin-top: 2.8vh;
+    padding: 0;
+}
+
+#amplify {
+    color: transparent;
+    background-image: linear-gradient(360deg, var(--amplify_blue), grey 210%);
+    -webkit-background-clip: text;
+}
+
+.headshotBioContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 1.525rem;
+}
+
+.headshotLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.91rem;
+    max-width: 27.5%;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    font-size: var(--fs-personalLinks);
+    line-height: var(--lh-per--fs-personalLinks);
+    font-weight: var(--fw-per--fs-personalLinks);
+
+    color: transparent;
+    background-image: linear-gradient(360deg, var(--amplify_blue), grey 210%);
+    -webkit-background-clip: text;
+
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: var(--gm_white);
+}
+
+.headshot {
+    display: flex;
+    max-width: 100%;
+}
+
+.headshot img {
+    border-radius: 0.105rem;
+    max-width: 100%;
+}
+
+.bio {
+    max-width: 42%;
+}
+
+.bio p {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: auto;
+    text-align: left;
+    color: var(--gm_grey);
+}
+
+.footer p {
+    font-size: var(--fs-footer);
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* small */
+@media (min-width: 0px) and (max-width: 768px) {
+
+    :root {
+        --fs-personalLinks-base: 1.19rem;
+    }
+    
+    .headshotBioContainer{
+        flex-direction: column;
+    }
+
+    .headshotLinks {
+        max-width: 100%;
+    }
+
+    .bio {
+        max-width: 70%;
+    }
+    
+}
+
+
+/* medium */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+
+/* large */
+@media (min-width: 1025px) and (max-width: 1536px) {
+
+}
+
+
+/* x-large */
+@media (min-width: 1537px) {
+
+
+}
