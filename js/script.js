@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     sw01: {
       body: {
         color: 'var(--gm_white)',
-        backgroundImage: 'radial-gradient(#d02100, #d02100)'
+        backgroundImage: 'radial-gradient(#656565, #808080, #767676, #aaaaaa, #808080)'
       },
       '#name:hover': { color: 'var(--gm_black)' },
       '#info:hover': { color: 'var(--gm_black)' },
